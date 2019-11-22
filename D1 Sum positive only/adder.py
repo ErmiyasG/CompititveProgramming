@@ -3,7 +3,7 @@ def adder():
     num2= input("Second number: ")
 
     carry = 0
-    result = ""
+    result = "" 
 
     if len(num1) > len(num2):
         while len(num1) != len(num2):
