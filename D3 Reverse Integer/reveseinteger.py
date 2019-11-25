@@ -1,6 +1,7 @@
 def reverseInteger():
-    value = input("Enter the integer: ")
+    value = input()
     result = ""
+    integer = 0
     
     if value[0] == '-':
         value = value[1:]
@@ -8,11 +9,13 @@ def reverseInteger():
             result = result + value[-1]
             value = value[:-1]
         result = '-' + result
-        print(result)
+        integer = int(result)
+        print(integer)
     else:
         for i in value:
             result = result + value[-1]
             value = value[:-1]
-        print(result)
+            integer = int(result)
+        print(integer)
     
 reverseInteger()
